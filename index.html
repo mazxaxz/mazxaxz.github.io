@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <button class="btn btn-earth active" data-env="earth">Earth</button>
+  <button class="btn btn-space" data-env="space">Space</button>
+
+  <input type="range" name="mass-control" min="10" max="500" step="1" value="200" />
+  <span class="mass">
+    Mass: <span id="mass-value">200</span>
+  </span>
+
+  <canvas></canvas>
+
+  <script src="js/definitions.js"></script>
+  <script src="js/_classes/Object.js"></script>
+  <script src="js/_classes/Ball.js"></script>
+  <script src="js/_classes/Celestial.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/interaction.js"></script>
+  <script src="js/environment-control.js"></script>
+</body>
+</html>
